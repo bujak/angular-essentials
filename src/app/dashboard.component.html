@@ -1,1 +1,7 @@
 <p>Dashboard component</p>
+<div>
+  <button (click)="onSwitchState()">Switch state</button>
+</div>
+<p [textContent]="loadState"></p>
+
+<input type="text" [(ngModel)]="loadState">
