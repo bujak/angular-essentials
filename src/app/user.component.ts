@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 
 @Component({
@@ -9,8 +9,8 @@ import {Component} from '@angular/core';
   `
   })
 export class UserComponent {
-  name = '';
-  // onUserInput(event) {
-  //   this.name = event.target.value;
-  // }
+  @Input() name;
+  onUserInput(event) {
+    this.name = event.target.value;
+  }
 }
