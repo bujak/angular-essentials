@@ -6,6 +6,7 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
   template: `
     <input type="text" (input)="onUserInput($event)" [value]="name">
     <p>Hello {{name}} from user component</p>
+    <app-user-detail></app-user-detail>
   `
   })
 export class UserComponent {
