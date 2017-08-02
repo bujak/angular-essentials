@@ -13,4 +13,9 @@ export class AppComponent {
   onNameChanged(newName) {
     this.rootName = newName;
   }
+
+  onItemWasAdded(newItem) {
+    this.rootItems.push(newItem);
+    console.log(this.rootItems);
+  }
 }
