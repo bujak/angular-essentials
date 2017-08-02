@@ -16,6 +16,6 @@ export class CartComponent implements OnInit {
   }
 
   onAddItem() {
-
+    this.itemAdded.emit(this.newItem);
   }
 }
