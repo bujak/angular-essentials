@@ -2,7 +2,10 @@
   cart works!
 
   <input type="text" [(ngModel)]="newItem"/>
-  <button (click)="onAddItem()">Add item</button>
+  <button
+    (click)="onAddItem()"
+    class="btn"
+    [ngClass]="{'btn-primary': newItem !== '', 'btn-default disabled': newItem === '' }">Add item</button>
 </p>
 
 <ul class="list-group">
