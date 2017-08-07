@@ -4,3 +4,7 @@
   <input type="text" [(ngModel)]="newItem"/>
   <button (click)="onAddItem()">Add item</button>
 </p>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of items">{{item}}</li>
+</ul>
