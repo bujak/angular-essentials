@@ -1,13 +1,11 @@
-<p>
-  cart works!
-
-  <input type="text" [(ngModel)]="newItem"/>
-  <button
-    (click)="onAddItem()"
-    class="btn"
-    [ngClass]="{'btn-primary': newItem !== '', 'btn-default disabled': newItem === '' }">Add item</button>
-</p>
-
+<hr>
+<input type="text" [(ngModel)]="newItem"/>
+<button
+  (click)="onAddItem()"
+  class="btn"
+  [ngClass]="{'btn-primary': newItem !== '', 'btn-default disabled': newItem === '' }">Add item
+</button>
+<span *ngIf="newItem ===  '' ">Enter a value</span>
 <ul class="list-group">
   <li
     class="list-group-item"
